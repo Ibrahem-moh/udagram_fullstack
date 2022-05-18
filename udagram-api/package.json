@@ -10,9 +10,9 @@
         "prod": "tsc && node ./www/server.js",
         "clean": "rm -rf www/ || true",
         "build": "npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cd www && zip -r Archive.zip . && cd ..",
-        "setenv": "eb setenv POSTGRES_USER=$POSTGRES_USER PORT=$PORT   db_port = $DB_PORT POSTGRES_DB = $POSTGRES_DB POSTGRES_PASSWORD = $POSTGRES_PASSWORD POSTGRES_HOST = $POSTGRES_HOST URL = $URL;eb use Udagramfullstack-env; eb deploy",
+        "setenv": "eb setenv POSTGRES_USER=$POSTGRES_USER PORT=$PORT   db_port=$DB_PORT POSTGRES_DB=$POSTGRES_DB POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_HOST=$POSTGRES_HOST URL=$URL;eb use Udagramfullstack-env; eb deploy",
         "deploy_old": "chmod +x ./bin/deploy.sh && ./bin/deploy.sh",
-        "deploy": "npm run build && eb setenv AWS_ACCESS_KEY_ID=  $AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY =$AWS_SECRET_ACCESS_KEY AWS_DEFAULT_REGION =  $AWS_DEFAULT_REGION POSTGRES_USER = $POSTGRES_USER  POSTGRES_PASSWORD = $POSTGRES_PASSWORD  POSTGRES_DB = $POSTGRES_DB    PORT = $PORT     POSTGRES_HOST = $POSTGRES_HOST     AWS_REGION = $AWS_REGION      AWS_PROFILE = $AWS_PROFILE     AWS_BUCKET = $AWS_BUCKET    URL = $URL     db_port = $DB_PORT     JWT_SECRET = $JWT_SECRET ;eb use udaapp-env  ; eb deploy",
+        "deploy": "npm run build && eb setenv AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION POSTGRES_USER=$POSTGRES_USER  POSTGRES_PASSWORD=$POSTGRES_PASSWORD  POSTGRES_DB=$POSTGRES_DB  PORT=$PORT POSTGRES_HOST=$POSTGRES_HOST  AWS_REGION=$AWS_REGION  AWS_PROFILE=$AWS_PROFILE AWS_BUCKET=$AWS_BUCKET  URL=$URL db_port=$DB_PORT  JWT_SECRET=$JWT_SECRET ;eb use udaapp-env  ; eb deploy",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
