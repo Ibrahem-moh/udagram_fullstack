@@ -1,9 +1,8 @@
 branch-defaults:
   default:
-    environment: null
-    group_suffix: null
+    environment: udaapp-env
 global:
-  application_name: udadegram_fullstack_v2
+  application_name: udaapp
   branch: null
   default_ec2_keyname: null
   default_platform: Node.js 16 running on 64bit Amazon Linux 2
