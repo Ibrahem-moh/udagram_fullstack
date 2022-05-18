@@ -1,5 +1,5 @@
-eb init udagram_fullstack --platform node.js --region us-east-1 
-eb create  Udagramfullstack-env
+# eb init udagram_fullstack --platform node.js --region us-east-1 
+# eb create  Udagramfullstack-env
 eb use Udagramfullstack-env
 eb deploy
 
@@ -7,3 +7,4 @@ eb setenv AWS_ACCESS_KEY_ID="$AWS_ACCESS_KEY_ID" AWS_SECRET_ACCESS_KEY="$AWS_SEC
 POSTGRES_USER="$POSTGRES_USER" POSTGRES_PASSWORD="$POSTGRES_PASSWORD"  POSTGRES_DB="$POSTGRES_DB" PORT="$PORT"
 POSTGRES_HOST="$POSTGRES_HOST" AWS_REGION="$AWS_REGION"   AWS_PROFILE="$AWS_PROFILE" AWS_BUCKET="$AWS_BUCKET" URL="$URL" db_port="$DB_PORT" 
 JWT_SECRET="$JWT_SECRET" 
+n
