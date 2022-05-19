@@ -35,9 +35,7 @@ jobs:
       - run:
           name: Front-End Deploy
           command: npm run frontend:deploy
-      - run:
-          name: back-End start
-          command: npm run backend:start
+
 workflows:
   build-deploy:
     jobs:
