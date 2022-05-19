@@ -1,7 +1,7 @@
 cd ./www/
 
-eb init --platform node.js-16 --region us-east-1 udaapp
-eb create  udaapp-env
+# eb init --platform node.js-16 --region us-east-1 udaapp
+# eb create  udaapp-env
 eb use udaapp-env
 eb deploy
 
