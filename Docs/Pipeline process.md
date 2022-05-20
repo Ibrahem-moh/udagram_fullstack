@@ -13,4 +13,4 @@
 
 ##  Pipeline
 
-![Screenshot ](../screenshots/Pipeline.png)
+![Screenshot ](https://github.com/ibr800/udagram_fullstack/blob/master/Screenshots/Pipeline.png)

@@ -6,6 +6,6 @@
 
 ## Architecture Diagram
 
-![Architecture Diagram](../screenshots/App_Architecture_Diagram.png)
+![Architecture Diagram](https://github.com/ibr800/udagram_fullstack/blob/master/Screenshots/App_Architecture_Diagram.png)
 
-## The app is available at [http://gardal.s3-website-us-east-1.amazonaws.com]
+## The app is available at http://gardal.s3-website-us-east-1.amazonaws.com
