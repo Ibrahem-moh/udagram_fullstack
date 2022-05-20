@@ -8,10 +8,9 @@ jobs:
     docker:
       - image: "cimg/base:stable"
     steps:
-       - run:
+      - run:
           name: "db host"
           command: echo ${POSTGRES_HOST}
- 
       - node/install:
           node-version: "16.13"
       - checkout
